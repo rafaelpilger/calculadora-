@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <title>Calculadora | DevBSB</title>
+
+    <meta name="description"
+        content="Uma simples calculadora com funções báricas: adição, subtração, multiplicação e divisão, desenvolvida em HMTL, CSS e Javascript." />
+    <meta name="keywords"
+        content="calculadora, devbsb, html, css, javascript, animation, adição, subtração, multiplicação, divisão, projeto" />
+    <meta name="robots" content="" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="Portuguese" />
+    <meta name="generator" content="N/A" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="/img/favicon.ico" />
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    
+    <div class="calculator">
+
+        
+        <div class="display">
+            <input id="display" placeholder="0" disabled>
+            <h2 id="history"></h2>
+        </div>
+
+                <div class="row">
+            <button class="button purple-text" onclick="limpar()">AC</button>
+            <div></div>
+            <div></div>
+            <button class="button gray" onclick="operacao('/')">/</button>
+        </div>
+         <!--div numeros e operaçao-->
+        <div class="row">
+            <button class="button" onclick="os_numeros(7)">7</button>
+            <button class="button" onclick="os_numeros(8)">8</button>
+            <button class="button" onclick="os_numeros(9)">9</button>
+            <button class="button gray" onclick="operacao('*')">*</button>
+        </div>
+         <!--div numeros e operaçao-->
+        <div class="row">
+            <button class="button" onclick="os_numeros(4)">4</button>
+            <button class="button" onclick="os_numeros(5)">5</button>
+            <button class="button" onclick="os_numeros(6)">6</button>
+            <button class="button gray" onclick="operacao('-')">-</button>
+        </div>
+
+        <!--div numeros e operaçao-->
+        <div class="row">
+            <button class="button" onclick="os_numeros(1)">1</button>
+            <button class="button" onclick="os_numeros(2)">2</button>
+            <button class="button" onclick="os_numeros(3)">3</button>
+            <button class="button gray" onclick="operacao('+')">+</button>
+        </div>
+          <!--div numeros e operaçao-->
+        <div class="row">
+            <div></div>
+            <button class="button" onclick="os_numeros(0)">0</button>
+            <button class="button" onclick="os_numeros('.')">.</button>
+            <button class="button purple" onclick="total()">=</button>
+        </div>
+        
+    </div>
+
+   
+    <div class="github">
+        <a href="https://github.com/iaematt/calculator" target="_blank" title="Code in GitHub">
+            <img src="/img/github.svg" width="35" />
+        </a>
+    </div>
+
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/keyboard.min.js"></script>
+
+</body>
+
+</html>
